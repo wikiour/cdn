@@ -9,6 +9,7 @@ This is a set of basic styles and scripts that you can connect remotely to your 
 
 #### Burger Menu Js
 ```
+@import url("https://wikiour.github.io/cdn/css/burger-menu.css");
 <script src="https://wikiour.github.io/cdn/js/burger-menu.js"></script>
 ```
 

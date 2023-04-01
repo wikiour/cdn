@@ -7,7 +7,7 @@
 # Facebook: https://facebook.com/wikiour
 # Instagram: https://instagram.com/wikiour
 
-Description:  This script helps to implement a mobile menu
+Description: Burger Menu
 
 */
 
@@ -15,16 +15,14 @@ function burger() {
   let body = document.querySelector('body');
   let headerMenu = document.querySelector('.header-menu');
   let burger = document.querySelector('.burger');
-  let burgerOpen = document.querySelector('.burger-open');
-  let burgerClose = document.querySelector('.burger-close');
+  let spanBurger = document.querySelector('span.burger');
 
-
-  if (document.querySelector('.burger')) {
+  if (document.querySelector('.header-menu')) {
     burger.addEventListener('click', function () {
       body.classList.toggle('lock-menu');
       headerMenu.classList.toggle('open');
-      burgerOpen.classList.toggle('open');
-      burgerClose.classList.toggle('close');
+      burger.classList.toggle('open');
+      spanBurger.classList.toggle('open');
     });
   }
 }; burger();
