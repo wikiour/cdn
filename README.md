@@ -30,8 +30,8 @@ This is a set of basic styles and scripts that you can connect remotely to your 
 
 #### Full Nav Menu
 ```
-@import url("https://wikiour.github.io/cdn/css/full-nav-menu.css");
-<script src="https://wikiour.github.io/cdn/js/full-nav-menu.js"></script>
+@import url("https://wikiour.github.io/cdn/css/full-menu.css");
+<script src="https://wikiour.github.io/cdn/js/full-menu.js"></script>
 ```
 
 #### Swiper
