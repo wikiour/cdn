@@ -125,6 +125,23 @@ function navMenu(options) {
       };
       addSpanClass();
     });
+    document.addEventListener('click', function (event) {
+      const navigElement = document.querySelector(`.${navMenu}`);
+      const clickedElement = event.target;
+      if (!navigElement.contains(clickedElement)) {
+        closeSub();
+        closeSubLI();
+        addSpanClass();
+      };
+    });
+    const linkElements = document.querySelectorAll('a');
+    linkElements.forEach(function (link) {
+      link.addEventListener('click', function () {
+        closeSub();
+        closeSubLI();
+        addSpanClass();
+      });
+    });
     function hover() {
       if (document.querySelector(`.${navMenuLi}`)) {
         const navMenuLiElements = document.querySelectorAll(`.${navMenuLi}`);
@@ -152,23 +169,6 @@ function navMenu(options) {
         });
       };
     };
-    document.addEventListener('click', function (event) {
-      const navigElement = document.querySelector(`.${navMenu}`);
-      const clickedElement = event.target;
-      if (!navigElement.contains(clickedElement)) {
-        closeSub();
-        closeSubLI();
-        addSpanClass();
-      };
-    });
-    const linkElements = document.querySelectorAll('a');
-    linkElements.forEach(function (link) {
-      link.addEventListener('click', function () {
-        closeSub();
-        closeSubLI();
-        addSpanClass();
-      });
-    });
     function addSpanClass() {
       function updateActiveClass(li) {
         if (li.classList.contains(navMenuLi) && li.classList.contains(navMenuActive)) {
